@@ -27,6 +27,7 @@
     - `API_KEY`       -> API Key
     - `CLIENT_ID`     -> OAuth client_id
     - `CLIENT_SECRET` -> OAuth client_secret
+    - `REDIRECT_URL`  -> Redirect URL
 3. `d2api_hello.py`を実行
 4. Access to the Authorization link(shown in terminal) with your browser and log in to bungie.net.
     ```
@@ -48,7 +49,7 @@
     - requests-oauthlib: `pip install requests requests-oauthlib` でインストール
 - Windows10 64bit
 - Bungie APIキー
-    - https://www.bungie.net/en/Application へアクセスしてアプリケーション登録を行い、APIキーとクライアントIDを取得しておいてください。
+    - https://www.bungie.net/ja/Application へアクセスしてアプリケーション登録を行い、APIキーとクライアントIDを取得しておいてください。
     - テスト環境では"OAuthクライアントタイプ"は"機密"に設定しています。
     - "リダイレクトURLへリンク"はコード内の`REDIRECT_URL`と一致している必要があります。
 
@@ -65,6 +66,7 @@
     - `API_KEY`       -> APIキー
     - `CLIENT_ID`     -> OAuth client_id
     - `CLIENT_SECRET` -> OAuth client_secret
+    - `REDIRECT_URL`  -> リダイレクトURLへリンク
 3. `d2api_hello.py`を実行
 4. 下記のようにAuthorization linkがターミナルに表示されるのでブラウザでアクセスする。Bungie.netログインが必要。
     ```
